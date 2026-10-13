@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter sign-up form</title>
+  <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="css/files.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <main>
+    <article class="newsletter">
+      <section id="sign-up-section">
+        <picture class="newsletter__img">
+          <source media="(min-width:70em)" srcset="./images/illustration-sign-up-desktop.svg">
+          
+          <source media="(min-width:60em)" srcset="./images/illustration-sign-up-tablet.svg">
+  
+          <img src="./images/illustration-sign-up-mobile.svg" alt="" aria-hidden="true">
+        </picture>
+  
+        <div class="newsletter__content">
+          <div class="newsletter__info">
+            <h1>Stay updated!</h1>
+    
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+    
+          </div>
+          
+          <ul class="newsletter__list">
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+  
+          <form class="newsletter__form" novalidate id="newsletter-form">
+            <div class="newsletter__label-error">
+              <label for="email">Email address</label>
+  
+              <span class="is-hidden" id="email-error">Valid email required</span>
+            </div>
+            
+            <input 
+            type="email" 
+            id="email" 
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            name="email" 
+            placeholder="email@company.com" 
+            aria-describedby="email-error" >
+            
+            <button type="submit">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="success-section" class=" newsletter__success-section is-hidden">
+        <img src="images/icon-success.svg" alt="" aria-hidden="true">
+
+        <h2>Thanks for subscribing!</h2>
+
+        <p>A confirmation email has been sent to <span>ash@loremcompany.com.</span> 
+          Please open it and click the button inside to confirm your subscription
+        </p>
+
+        <button type="button" id="dismiss-btn">Dismiss message</button>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

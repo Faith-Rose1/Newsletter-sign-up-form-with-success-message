@@ -1,0 +1,26 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+@mixin respond-to($device) {
+  @if map.has-key($breakpoints, $device){
+    @media (min-width: map.get($breakpoints, $device)){
+      @content;
+    }
+  } @else {
+    @error "No breakpoint found for '#{$device}'. Available breakpoints: #{map.keys($breakpoints)}"
+  }
+}
+
+@mixin flex(
+  $dir:row,
+  $content:null, 
+  $items:null,
+  $gap:null
+  ) {
+  display: flex;
+  flex-direction: $dir;
+  
+  @if $content {justify-content: $content;}
+  @if $items {align-items: $items;}
+  @if $gap {gap: $gap;}
+}
