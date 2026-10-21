@@ -36,7 +36,7 @@ body {
   background-color: hsl(235, 18%, 26%);
 }
 
-.newsletter {
+.newsletter__sign-up {
   background-color: hsl(0, 0%, 100%);
   inline-size: 100%;
   max-inline-size: clamp(23.4375rem, 11.2896rem + 51.831vw, 57.9375rem);
@@ -45,7 +45,7 @@ body {
   flex-direction: column;
 }
 @media (min-width: 70em) {
-  .newsletter {
+  .newsletter__sign-up {
     display: flex;
     flex-direction: row-reverse;
     padding: 1.5625rem;
@@ -145,9 +145,9 @@ body {
   display: flex;
   flex-direction: column;
   block-size: 100vh;
-  padding-block-start: 1.5625rem;
+  padding-block-start: clamp(1.5625rem, 12.1259rem - 11.7371vw, 9.375rem);
   padding-block-end: 2.5rem;
-  padding-inline: 2.3125rem;
+  padding-inline: clamp(1.5rem, 1.2139rem + 1.2207vw, 2.3125rem);
   inline-size: 100%;
   max-inline-size: 28.125rem;
 }
@@ -159,13 +159,13 @@ body {
 .newsletter__success-section img {
   inline-size: 3.9375rem;
   aspect-ratio: 1/1;
-  margin-block-end: 2.8125rem;
+  margin-block-end: clamp(2.375rem, 2.221rem + 0.6573vw, 2.8125rem);
 }
 .newsletter__success-section h2 {
   color: hsl(234, 29%, 20%);
-  font-size: 3.5rem;
-  line-height: 3.25rem;
-  margin-block-end: 1.5625rem;
+  font-size: clamp(2.5rem, 2.1479rem + 1.5023vw, 3.5rem);
+  line-height: clamp(2.625rem, 2.4049rem + 0.939vw, 3.25rem);
+  margin-block-end: clamp(1.3125rem, 1.2245rem + 0.3756vw, 1.5625rem);
 }
 .newsletter__success-section p {
   line-height: 1.5rem;

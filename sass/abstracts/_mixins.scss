@@ -9,7 +9,7 @@
   } @else {
     @error "No breakpoint found for '#{$device}'. Available breakpoints: #{map.keys($breakpoints)}"
   }
-}
+};
 
 @mixin flex(
   $dir:row,
