@@ -54,6 +54,7 @@ body {
 }
 .newsletter__img {
   display: block;
+  flex-basis: 29.375rem;
 }
 .newsletter__img img {
   display: block;
@@ -64,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-block: 2.4375rem;
+  padding-block: 4.375rem;
   padding-inline-start: clamp(1.5625rem, 1.2764rem + 1.2207vw, 2.375rem);
   padding-inline-end: clamp(1.5625rem, 0.6822rem + 3.7559vw, 4.0625rem);
 }

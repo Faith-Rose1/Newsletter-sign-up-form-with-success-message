@@ -20,6 +20,7 @@
 
   &__img {
     display: block;
+    flex-basis: rem(470);
     
     img {
       display: block;
@@ -30,7 +31,7 @@
 
   &__content {
     @include m.flex($dir:column,$content:center);
-    padding-block: rem(39);
+    padding-block: rem(70);
     padding-inline-start: clamp(1.5625rem, 1.2764rem + 1.2207vw, 2.375rem);
     padding-inline-end: clamp(1.5625rem, 0.6822rem + 3.7559vw, 4.0625rem);
   }
