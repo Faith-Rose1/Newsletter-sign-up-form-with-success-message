@@ -119,12 +119,8 @@
   &__success-section {
     @include m.flex($dir:column);
     block-size: 100vh;
-    // padding-block-start: rem(150);
-    // padding-block-start: rem(25);
     padding-block-start: clamp(1.5625rem, 12.1259rem - 11.7371vw, 9.375rem);
     padding-block-end: rem(40);
-    // padding-inline: rem(24);
-    // padding-inline: rem(37);
     padding-inline: clamp(1.5rem, 1.2139rem + 1.2207vw, 2.3125rem);
     inline-size: 100%;
     max-inline-size: rem(450);
@@ -136,21 +132,13 @@
     img {
       inline-size: rem(63);
       aspect-ratio: 1 / 1;
-      // margin-block-end: rem(38);
-      // margin-block-end: rem(45);
       margin-block-end: clamp(2.375rem, 2.221rem + 0.6573vw, 2.8125rem);
     }
 
     h2 {
       color: v.$Blue-800;
-      // font-size: rem(40);
-      // font-size: rem(56);
       font-size: clamp(2.5rem, 2.1479rem + 1.5023vw, 3.5rem);
-      // line-height: rem(42);
-      // line-height: rem(52);
       line-height: clamp(2.625rem, 2.4049rem + 0.939vw, 3.25rem);
-      // margin-block-end: rem(21);
-      // margin-block-end: rem(25);
       margin-block-end: clamp(1.3125rem, 1.2245rem + 0.3756vw, 1.5625rem);
     }
 
