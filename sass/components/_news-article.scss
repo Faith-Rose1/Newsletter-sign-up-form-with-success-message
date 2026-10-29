@@ -15,12 +15,15 @@
       @include m.flex($dir:row-reverse);
       padding: rem(25);
       border-radius: rem(35);
+
+      picture {
+        flex-basis: rem(470);
+      }
     }
   }
 
   &__img {
     display: block;
-    flex-basis: rem(470);
     
     img {
       display: block;
@@ -31,7 +34,8 @@
 
   &__content {
     @include m.flex($dir:column,$content:center);
-    padding-block: rem(70);
+    padding-block-start: rem(37);
+    padding-block-end: rem(38);
     padding-inline-start: clamp(1.5625rem, 1.2764rem + 1.2207vw, 2.375rem);
     padding-inline-end: clamp(1.5625rem, 0.6822rem + 3.7559vw, 4.0625rem);
   }
@@ -98,13 +102,14 @@
     border: none;
     background-color: v.$Blue-800;
     color: v.$White;
+    transition: background-color 0.3s ease;
 
     &:hover {
       background-color: v.$Red;
     }
   }
 
-  input:hover, button:hover {
+  input, button {
     cursor: pointer;
   }
 
@@ -124,6 +129,7 @@
     padding-inline: clamp(1.5rem, 1.2139rem + 1.2207vw, 2.3125rem);
     inline-size: 100%;
     max-inline-size: rem(450);
+    background-color: v.$White;
 
     @include m.respond-to('desktop') {
       block-size: auto;

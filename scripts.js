@@ -8,12 +8,12 @@ const dismissBtn = document.getElementById('dismiss-btn');
 form.addEventListener('submit', e => {
   e.preventDefault(); 
 
-  if(inputElement.checkValidity()) {
-    toggleClass();
-  } else {
+  if(!inputElement.checkValidity() || !inputElement.value) {
     errorMSG.classList.remove('is-hidden');
     inputElement.classList.add('input-error');
     return;
+  } else {
+    toggleClass();
   }
 
   const data = new FormData(form); 

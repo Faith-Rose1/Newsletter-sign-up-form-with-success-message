@@ -51,10 +51,12 @@ body {
     padding: 1.5625rem;
     border-radius: 2.1875rem;
   }
+  .newsletter__sign-up picture {
+    flex-basis: 29.375rem;
+  }
 }
 .newsletter__img {
   display: block;
-  flex-basis: 29.375rem;
 }
 .newsletter__img img {
   display: block;
@@ -65,7 +67,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-block: 4.375rem;
+  padding-block-start: 2.3125rem;
+  padding-block-end: 2.375rem;
   padding-inline-start: clamp(1.5625rem, 1.2764rem + 1.2207vw, 2.375rem);
   padding-inline-end: clamp(1.5625rem, 0.6822rem + 3.7559vw, 4.0625rem);
 }
@@ -127,11 +130,12 @@ body {
   border: none;
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
+  transition: background-color 0.3s ease;
 }
 .newsletter button:hover {
   background-color: hsl(4, 100%, 67%);
 }
-.newsletter input:hover, .newsletter button:hover {
+.newsletter input, .newsletter button {
   cursor: pointer;
 }
 .newsletter__label-error {
@@ -151,6 +155,7 @@ body {
   padding-inline: clamp(1.5rem, 1.2139rem + 1.2207vw, 2.3125rem);
   inline-size: 100%;
   max-inline-size: 28.125rem;
+  background-color: hsl(0, 0%, 100%);
 }
 @media (min-width: 70em) {
   .newsletter__success-section {
